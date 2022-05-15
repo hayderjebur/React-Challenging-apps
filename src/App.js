@@ -37,7 +37,7 @@ function App() {
   const [page, setPage] = useState(0);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const lastPage = fields.length - 1; // 4 - 1 = 3
+  const lastPage = fields.length - 1;
 
   const onChange = (e) => {
     setFormValues({

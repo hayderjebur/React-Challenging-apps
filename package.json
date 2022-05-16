@@ -20,7 +20,6 @@
     "enzyme-to-json": "^3.4.0",
     "react-test-renderer": "^16.9.0"
   },
-  "proxy": "http://localhost:3001/",
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"

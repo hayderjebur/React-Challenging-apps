@@ -9,3 +9,17 @@ export const useDebounceFunction = (func, delay) => {
     }, delay);
   };
 };
+*************
+  const useDebounceFunction = (cb, delay) => {
+  let timer;
+  return function (...args) {
+    if (timer) clearTimeout(timer)
+    timer = setTimeout(() => {
+      cb(...args)
+    }, delay);
+  };
+};
+  // Usage
+handleChange= useDebounceFunction((event)=>{
+console.log(event.target.value)
+},1000)
